@@ -1,10 +1,21 @@
 package org.cscie88c.week6
 
 // define trait KafkaProducer below
-
+  trait KafkaProducer {
+  def topic: String
+  def send(message: String): String = "Topic " + topic + "with message: " + message + "sent to Kafka"
+}
 // define the companion object KafkaProducer below
 
+  object KafkaProducer {
+    implicit val defaultKafkaProducer: SimpleKafkaProducer = SimpleKafkaProducer(topic = "defualt-topic")
+  }
+
 // define the case class SimpleKafkaProducer below
+  case class SimpleKafkaProducer(topic: String) extends KafkaProducer {
+
+}
+
 
 // uncomment the lines below once you have implemented KafkaProducer and SimpleKafkaProducer
 /*

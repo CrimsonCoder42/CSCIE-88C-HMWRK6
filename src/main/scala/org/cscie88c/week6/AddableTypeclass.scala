@@ -3,6 +3,7 @@ package org.cscie88c.week6
 // Write a generic trait AddableTypeclass parameterized by type A 
 trait AddableTypeclass[A] {
   // add trait methods below
+
 }
 
 object AddableTypeclass {
