@@ -2,8 +2,8 @@ package org.cscie88c.prereq
 
 object ValuesVariablesTypes extends App {
 
-  val x = 42
-  println(x)
+  val meaningOfLife: Int = 42
+  println(meaningOfLife)
 
   // VALS ARE IMMUTABLE
 
@@ -16,7 +16,9 @@ object ValuesVariablesTypes extends App {
 
   val aBoolean: Boolean = true
   val aChar: Char = 'a'
-  val anInt: Int = x
+  val anInt: Int = meaningOfLife
+
+  val aStringInterp = s"The meaning of life is ${meaningOfLife}"
 
 
 
